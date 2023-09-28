@@ -19,4 +19,35 @@
 
  btn1.onclick = FirstTask; 
 
+//Task 2
+let res2=document.querySelector('.res2');
+let btn2=document.querySelector('.btn2');
 
+function doMath(x, znak, y) {
+x = +prompt("Введіть перше число");
+y = +prompt("Введіть друге число");
+znak = prompt("Виберіть операцію +, -, *, /, %, ^ ");
+  switch (znak) {
+      case "+":
+          res2.innerHTML = x + y;
+          break;
+      case "-":
+        res2.innerHTML = x - y;
+          break;
+      case "*":
+        res2.innerHTML= x * y;
+          break;
+      case "/":
+        res2.innerHTML = x / y;
+          break;  
+      case "%":
+        res2.innerHTML = x % y;
+          break;
+      case "^":
+        res2.innerHTML = Math.pow(x,y);
+          break;    
+  }
+
+  return res2;
+}
+btn2.onclick=doMath;
