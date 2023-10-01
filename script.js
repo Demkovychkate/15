@@ -51,3 +51,36 @@ znak = prompt("Виберіть операцію +, -, *, /, %, ^ ");
   return res2;
 }
 btn2.onclick=doMath;
+
+//Task 3
+let res3=document.querySelector('.res3');
+let btn3=document.querySelector('.btn3');
+
+function ThirdTask() {
+  let n = prompt("Введіть довжину масиву");
+  let m = prompt("Введіть довжину внутрішніх масивів");
+
+let mainmass= [];
+
+  for (let i = 0; i < n; i++) {
+    let mass = [];
+    for (let j = 0; j < m; j++) {
+      let element = prompt(`Введіть значення для елемента (${i},${j})`);
+      mass.push(element);
+   
+    }
+    mainmass.push(mass);
+   
+
+  }
+ 
+res3.innerHTML+=mainmass;
+console.log(mainmass);
+  return mainmass;
+  
+}
+btn3.onclick = ThirdTask;
+
+
+
+
