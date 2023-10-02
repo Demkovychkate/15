@@ -69,8 +69,7 @@ let mainmass= [];
       mass.push(element);
    
     }
-    mainmass.push(mass);
-   
+    mainmass.push(mass);  
 
   }
  
@@ -80,6 +79,26 @@ console.log(mainmass);
   
 }
 btn3.onclick = ThirdTask;
+
+//Task 4
+let res4=document.querySelector('.res4');
+let btn4=document.querySelector('.btn4');
+
+function FourthTask(){
+
+  let addText = prompt("Введіть текст");
+  let litera= prompt("Введіть літеру, яку потрібно видалити", );
+  let litera2= prompt("Введіть літеру, яку потрібно видалити", );
+  
+
+  let del = addText.replace(litera,' ', );
+  let del2 = del.replace(litera2,' ');
+  alert(del2); 
+  res4.innerHTML=del2;
+}
+
+btn4.onclick=FourthTask;
+
 
 
 
